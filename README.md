@@ -8,7 +8,7 @@ And the english summary is here: https://www.researchgate.net/publication/344666
 *The UI of the tool inside Rhino3d*
 
 ## Preparing the dataset
-To prepare the prototype carbon footprint estimation tool, first a training set needed to be generated. The set has been generated in an automated manner. 3300 randomized differ-ent forms of the building, with different material combinations, and different urban sur-roundings have been generated. Then, for each simulation, a grayscale height map of the surroundings was recorded (figure 5). In the next step the buildings have been simulated, and finally their Total Carbon Footprint have been calculated. This created the training set, which has been then divided in the proportion of 75% to 25% for the training set and the test set. The training process has been carried out in Python environment, and lasted 300 epochs, which took about 2 hours on a standard PC. The training results can be considered very good because the model explained 98.2% of the variance for the carbon footprint of the B6 phase and 99.9% for the carbon footprint of the A1-A3, C3-C4 and D phases.
+To prepare the prototype carbon footprint estimation tool, first a training set needed to be generated. The set has been generated in an automated manner. 3300 randomized different forms of the building, with different material combinations, and different urban sur-roundings have been generated. Then, for each simulation, a grayscale height map of the surroundings was recorded. In the next step the buildings have been simulated, and finally their Total Carbon Footprint have been calculated. This created the training set, which has been then divided in the proportion of 75% to 25% for the training set and the test set. The training process has been carried out in Python environment, and lasted 300 epochs, which took about 2 hours on a standard PC. The training results can be considered very good because the model explained 98.2% of the variance for the carbon footprint of the B6 phase and 99.9% for the carbon footprint of the A1-A3, C3-C4 and D phases.
 The dataset has been generated using Grasshopper ( https://github.com/Curiosit/PhD-PredictingCarbonFootprintOfBuildings/tree/main/gh/dataset-generation )
 
 ![fig5.jpg](./fig5.jpg)
@@ -16,7 +16,7 @@ The dataset has been generated using Grasshopper ( https://github.com/Curiosit/P
 *Randomized 3d building shapes were converted into grayscale Z-maps for convolutional neural network*
 
 ## Designing the neural network
-The neural network was designed in accordance with Rosebrock's suggestions for design-ing convolutional neural networks for regression problems (Rosebrock 2019). 
+The neural network was designed in accordance with Rosebrock's suggestions for designing convolutional neural networks for regression problems (Rosebrock 2019). 
 The network was built using Keras, an open source neural network library for Python (Chollet et al 2015). 
 The architecture of the neural network consists of two sets of input da-ta: one for the numerical data representing the features of the analyzed building, and the other for the image data representing the urban layout. 
 The image was analyzed by a convolutional neural network. 
